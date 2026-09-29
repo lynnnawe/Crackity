@@ -1,0 +1,158 @@
+C	need/clarity/a/a	need/clarity/event/PacketReceiveEvent
+C	need/clarity/a/b	need/clarity/event/PacketSendEvent
+C	need/clarity/b/a	need/clarity/input/KeybindHandler
+C	need/clarity/c/a	need/clarity/render/ArrayListOverlayRenderer
+C	need/clarity/c/b	need/clarity/render/OverlayGlTexture
+C	need/clarity/c/c	need/clarity/render/OverlayTexture
+C	need/clarity/c/d	need/clarity/render/OverlayGlState
+C	need/clarity/c/e	need/clarity/render/NanoVGTextRenderer
+C	need/clarity/c/f	need/clarity/render/NanoVGFontManager
+C	need/clarity/d/a	need/clarity/render/HeldItemAnimations
+C	need/clarity/d/b	need/clarity/render/ChinaHatLayer
+C	need/clarity/d/c	need/clarity/render/ChinaHatRenderTypes
+C	need/clarity/d/d	need/clarity/render/RenderState
+C	need/clarity/d/e	need/clarity/render/PlayerEspRenderer
+C	need/clarity/d/f	need/clarity/render/FramebufferUtils
+C	need/clarity/d/g	need/clarity/render/GlStateSnapshot
+C	need/clarity/d/h	need/clarity/render/MeshRenderer
+C	need/clarity/d/i	need/clarity/render/MeshEnumSwitches
+C	need/clarity/d/j	need/clarity/render/ShaderProgram
+C	need/clarity/d/k	need/clarity/render/HandShaderRenderer
+C	need/clarity/d/a/a	need/clarity/render/RenderOptions
+C	need/clarity/e/a	need/clarity/render/BoxRenderer
+C	need/clarity/e/b	need/clarity/render/ColoredBox
+C	need/clarity/e/c	need/clarity/util/ContainerReflection
+C	need/clarity/e/d	need/clarity/auth/HardwareAccessCheck
+C	need/clarity/e/e	need/clarity/auth/HardwareId
+C	need/clarity/e/f	need/clarity/util/InventoryAccess
+C	need/clarity/e/g	need/clarity/config/ThemeColors
+C	need/clarity/config/a	need/clarity/config/ServerProfiles
+C	bijwajihqirrnqvj/itjkfrmknyehiltk	need/clarity/deobfuscation/SwitchHash
+F	need/clarity/a/a	a	Lnet/minecraft/network/protocol/Packet;	packet
+F	need/clarity/a/a	b	Z	cancelled
+M	need/clarity/a/a	a	()Lnet/minecraft/network/protocol/Packet;	getPacket
+M	need/clarity/a/a	b	()Z	isCancelled
+M	need/clarity/a/a	c	()V	cancel
+F	need/clarity/a/b	a	Lnet/minecraft/network/protocol/Packet;	packet
+F	need/clarity/a/b	b	Z	cancelled
+M	need/clarity/a/b	a	()Lnet/minecraft/network/protocol/Packet;	getPacket
+M	need/clarity/a/b	b	()Z	isCancelled
+M	need/clarity/a/b	c	()V	cancel
+F	need/clarity/modules/ModuleBase	a	Ljava/lang/String;	name
+F	need/clarity/modules/ModuleBase	b	Ljava/lang/String;	category
+F	need/clarity/modules/ModuleBase	c	Z	enabled
+M	need/clarity/modules/ModuleBase	a	(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;	getSetting
+F	need/clarity/modules/ModuleRegistry	a	Ljava/util/Map;	modulesByName
+F	need/clarity/modules/ModuleRegistry	b	Z	tickEventRegistered
+M	need/clarity/modules/ModuleRegistry	a	(Ljava/lang/String;)Lneed/clarity/modules/ModuleBase;	getModule
+M	need/clarity/modules/ModuleRegistry	a	()Ljava/util/List;	getModules
+F	need/clarity/Clarity	a	Lorg/slf4j/Logger;	LOGGER
+F	need/clarity/PerPacketEvents	a	Ljava/util/List;	listeners
+M	need/clarity/PerPacketEvents	a	(Ljava/util/function/Consumer;)V	unregister
+F	need/clarity/PerPacketSendEvents	a	Ljava/util/List;	listeners
+M	need/clarity/PerPacketSendEvents	a	(Ljava/util/function/Consumer;)V	unregister
+F	need/clarity/PerAttackEvents	a	Ljava/util/List;	listeners
+M	need/clarity/PerAttackEvents	a	(Ljava/util/function/Consumer;)V	unregister
+F	need/clarity/PerFrameEvents	a	Ljava/util/List;	listeners
+M	need/clarity/PerFrameEvents	a	(Ljava/util/function/Consumer;)V	unregister
+F	need/clarity/WorldRenderEvent	a	Ljava/util/List;	listeners
+M	need/clarity/WorldRenderEvent	a	(Ljava/util/function/Consumer;)V	unregister
+F	need/clarity/PerMovementEvents	a	Lneed/clarity/modules/movement/MoveFix$EventMovementInput;	currentInput
+M	need/clarity/modules/movement/Sprint	a	(Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/player/Player;)Z	canSprint
+M	need/clarity/e/d	a	()V	checkAccess
+M	need/clarity/e/d	b	()Ljava/util/Set;	fetchAllowedHardwareIds
+M	need/clarity/e/d	a	(Ljava/lang/String;)V	denyAccess
+M	need/clarity/e/e	a	()Ljava/lang/String;	getHardwareId
+M	need/clarity/e/e	b	()Ljava/lang/String;	readWindowsId
+M	need/clarity/e/e	c	()Ljava/lang/String;	readMacId
+M	need/clarity/e/e	d	()Ljava/lang/String;	readLinuxId
+M	need/clarity/e/e	e	()Ljava/lang/String;	buildFallbackId
+M	need/clarity/e/e	a	([Ljava/lang/String;)Ljava/lang/String;	runCommand
+M	need/clarity/e/e	a	(Ljava/lang/String;)Ljava/lang/String;	hashIdentifier
+M	need/clarity/e/e	a	(Ljava/lang/Process;Ljava/lang/StringBuilder;)V	readProcessOutput
+F	need/clarity/config/ClarityConfig	a	Ljava/nio/file/Path;	configPath
+F	need/clarity/config/ClarityConfig	b	Lcom/google/gson/Gson;	gson
+F	need/clarity/config/ClarityConfig	c	Lcom/google/gson/JsonObject;	currentConfig
+F	need/clarity/config/ClarityConfig	d	Ljava/lang/String;	currentConfigJson
+F	need/clarity/config/ClarityConfig	e	Ljava/util/concurrent/ConcurrentHashMap;	enabledCache
+F	need/clarity/config/ClarityConfig	f	Ljava/util/concurrent/ScheduledExecutorService;	saveExecutor
+F	need/clarity/config/ClarityConfig	g	Ljava/util/concurrent/ScheduledFuture;	pendingSave
+M	need/clarity/config/ClarityConfig	a	()V	rebuildEnabledCache
+M	need/clarity/e/g	f	()Lcom/google/gson/JsonObject;	getThemeConfig
+M	need/clarity/e/g	a	()Z	isThemeEnabled
+M	need/clarity/e/g	b	()I	getAccentColor
+M	need/clarity/e/g	c	()I	getSecondaryAccentColor
+M	need/clarity/e/g	d	()I	getOpaqueAccentColor
+M	need/clarity/e/g	e	()I	getOpaqueSecondaryAccentColor
+M	need/clarity/e/g	a	(Ljava/lang/Object;)Z	isThemeToken
+M	need/clarity/e/g	a	(Ljava/lang/Object;I)I	parseRgb
+M	need/clarity/e/g	b	(Ljava/lang/Object;I)I	parseArgb
+M	need/clarity/e/g	a	(Ljava/lang/String;I)I	getThemeColor
+M	need/clarity/e/g	a	(Ljava/lang/Object;Z)I	resolveThemeRgb
+M	need/clarity/e/g	a	(Ljava/lang/Object;IZ)I	resolveRgb
+M	need/clarity/e/g	b	(Ljava/lang/Object;IZ)I	resolveArgb
+M	need/clarity/e/f	a	(Lnet/minecraft/world/entity/player/Inventory;)I	getSelectedSlot
+M	need/clarity/e/f	a	(Lnet/minecraft/world/entity/player/Inventory;I)V	setSelectedSlot
+M	need/clarity/e/f	b	(Lnet/minecraft/world/entity/player/Inventory;)Ljava/lang/reflect/Field;	findSelectedSlotField
+M	need/clarity/e/f	c	(Lnet/minecraft/world/entity/player/Inventory;)I	getSelectedSlotReflectively
+M	need/clarity/e/f	b	(Lnet/minecraft/world/entity/player/Inventory;I)V	setSelectedSlotReflectively
+F	need/clarity/e/b	a	Lnet/minecraft/world/phys/AABB;	bounds
+F	need/clarity/e/b	b	I	color
+M	need/clarity/b/a	a	(IZ)V	onKey
+M	need/clarity/b/a	b	(IZ)V	onMouseButton
+M	need/clarity/b/a	a	(Ljava/lang/String;)I	parseMouseButton
+M	need/clarity/b/a	b	(Ljava/lang/String;)I	parseKeyCode
+M	need/clarity/b/a	c	(Ljava/lang/String;)Ljava/lang/String;	getBindMode
+M	need/clarity/b/a	a	(Ljava/lang/String;Ljava/lang/String;IZ)V	handleBinding
+M	need/clarity/b/a	a	(Ljava/lang/String;Z)V	setModuleEnabled
+M	need/clarity/d/g	a	()Lneed/clarity/d/g;	capture
+M	need/clarity/d/g	b	()V	restore
+M	need/clarity/d/k	a	()Z	isInitialized
+M	need/clarity/d/k	b	()V	initializeShaders
+M	need/clarity/d/k	c	()V	resizeFramebuffers
+M	need/clarity/d/k	d	()V	renderHandEffect
+M	need/clarity/d/k	e	()V	drawFullscreenQuad
+M	need/clarity/d/k	f	()V	restoreRenderState
+M	need/clarity/d/k	g	()V	renderChroma
+M	need/clarity/d/k	h	()V	renderInvert
+M	need/clarity/d/k	i	()V	renderOutline
+M	need/clarity/d/d	a	()Z	isColorMasked
+M	need/clarity/d/d	a	(Z)V	setColorMasked
+M	need/clarity/d/d	b	()V	enableBlend
+M	need/clarity/d/d	c	()V	disableBlend
+M	need/clarity/d/d	d	()V	defaultBlendFunction
+M	need/clarity/d/d	a	(IIII)V	blendFunctionSeparate
+M	need/clarity/d/d	e	()V	enableDepthTest
+M	need/clarity/d/d	f	()V	disableDepthTest
+M	need/clarity/d/d	a	(I)V	setActiveTexture
+M	need/clarity/d/d	b	(I)V	bindTexture
+M	need/clarity/d/d	a	(Lcom/mojang/blaze3d/textures/GpuTexture;)V	bindTexture
+M	need/clarity/d/d	a	(FFFF)V	clearColor
+M	need/clarity/d/d	c	(I)V	clear
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	a	Z	forward
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	b	Z	backward
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	c	Z	left
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	d	Z	right
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	h	F	forwardImpulse
+F	need/clarity/modules/movement/MoveFix$EventMovementInput	i	F	leftImpulse
+M	need/clarity/modules/movement/MoveFix$EventMovementInput	a	()V	updateImpulses
+M	need/clarity/modules/movement/MoveFix$EventMovementInput	b	()V	updateDirectionalKeys
+M	bijwajihqirrnqvj/itjkfrmknyehiltk	qfctmcaaxjcwxdcq	(I)I	hashSwitchKey
+M	bijwajihqirrnqvj/itjkfrmknyehiltk	hyqmlgqtcqiakcqo	(I)I	mixControlState
+M	bijwajihqirrnqvj/itjkfrmknyehiltk	gualsbgxduatglmp	(I)I	mixControlStateAlias
+F	need/clarity/c/f	a	Ljava/util/List;	fontBuffers
+F	need/clarity/c/f	b	Z	fontsInitialized
+M	need/clarity/c/f	a	(J)V	initializeFonts
+M	need/clarity/c/f	a	()V	releaseFonts
+M	need/clarity/c/f	a	(JLjava/lang/String;Ljava/lang/String;)V	registerFont
+M	need/clarity/c/f	a	(Ljava/lang/String;)Ljava/nio/ByteBuffer;	readFontResource
+F	need/clarity/d/k	a	Lneed/clarity/d/j;	chromaShader
+F	need/clarity/d/k	b	Lneed/clarity/d/j;	invertShader
+F	need/clarity/d/k	c	Lneed/clarity/d/j;	outlineShader
+F	need/clarity/d/k	d	Lneed/clarity/d/j;	jfaInitShader
+F	need/clarity/d/k	e	Lneed/clarity/d/j;	jfaStepShader
+F	need/clarity/d/k	f	Lneed/clarity/d/j;	jfaCompositeShader
+F	need/clarity/d/k	g	Lcom/mojang/blaze3d/pipeline/TextureTarget;	handCopyTarget
+F	need/clarity/d/k	h	Lcom/mojang/blaze3d/pipeline/TextureTarget;	jfaTargetA
+F	need/clarity/d/k	i	Lcom/mojang/blaze3d/pipeline/TextureTarget;	jfaTargetB
+F	need/clarity/d/k	j	Z	initialized

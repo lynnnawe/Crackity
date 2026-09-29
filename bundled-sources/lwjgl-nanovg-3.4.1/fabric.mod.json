@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "org_lwjgl_lwjgl-nanovg",
+  "version": "3.4.1",
+  "name": "lwjgl-nanovg",
+  "custom": {
+    "fabric-loom:generated": true
+  }
+}

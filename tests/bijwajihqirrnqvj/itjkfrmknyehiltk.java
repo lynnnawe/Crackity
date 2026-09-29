@@ -1,0 +1,1 @@
+package bijwajihqirrnqvj;public class itjkfrmknyehiltk{public static int qfctmcaaxjcwxdcq(int x){return x==0?0:((x*31)>>>4)%x^(x>>>16);}}

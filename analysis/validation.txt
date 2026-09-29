@@ -1,0 +1,14 @@
+Primary sources: 217 / 217 input class entries covered.
+Java 25 syntax parsing: 217 primary files, zero syntax errors.
+Bundled Java: 29 source files (22 library files, 7 module descriptors), zero syntax errors.
+Serialized bytecode: 217 classes, 1560 methods, 721 fields, 59428 instructions.
+ASM BasicVerifier errors: 0. Remaining hash calls: 0. Decoder methods: 0.
+Resources: 81 / 81 SHA-256 hashes match the original.
+Source-level monitor reconstruction: 43 blocks across 4 files.
+Monitor fixture: lock held inside body and released on normal, early-return, and exception paths.
+Transformer fixture: original and transformed digest both -1153849246760534588.
+Fresh packaged recovery run: all 217 primary source files reproduced byte-for-byte.
+Original target classes executed or classloaded: no.
+Minecraft/Fabric dependency compilation: not performed.
+Runtime semantic equivalence of the target mod: not established.
+See README.md for the scope and limitations of these checks.

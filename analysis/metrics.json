@@ -1,0 +1,495 @@
+{
+  "input": {
+    "name": "clarity.jar",
+    "bytes": 9629283,
+    "sha256": "b3ee22c8321677289ba6db4e145eb5744623a5574a9bc4a66b1aa8ddfc1c1cc3"
+  },
+  "original": {
+    "classes": 217,
+    "methods": 3196,
+    "fields": 1235,
+    "instructions": 811990
+  },
+  "transformed": {
+    "classes": 217,
+    "methods": 1560,
+    "fields": 721,
+    "instructions": 59428
+  },
+  "transformations": {
+    "folded_expressions": 100453,
+    "opaque_branches": 17573,
+    "directly_counted_dead_instructions": 318505,
+    "normalized_exception_edges": 1355,
+    "decoded_string_callsites": 1222,
+    "restored_encoded_switches": 47,
+    "reconstructed_source_monitor_blocks": 43
+  },
+  "mapping_basis_counts": {
+    "manual inference from implementation": 149,
+    "surviving getter name": 7,
+    "descriptive type-based alias; purpose not established": 581,
+    "recovered enum name literal": 53,
+    "stable alias; purpose not established": 657,
+    "decoded configuration key": 140,
+    "field accessor": 34
+  },
+  "validation": {
+    "java_sources": 217,
+    "java25_syntax_errors": 0,
+    "asm_basic_verifier_errors": 0,
+    "remaining_hash_helper_calls": 0,
+    "remaining_string_decoder_methods": 0,
+    "compiled_with_minecraft_dependencies": false,
+    "runtime_equivalence_verified": false,
+    "bundled_java_sources": 29,
+    "bundled_java25_syntax_errors": 0,
+    "primary_source_reproduced_byte_for_byte": true,
+    "monitor_reconstruction_fixture_passed": true,
+    "transformation_fixture_digest": "-1153849246760534588"
+  },
+  "bundled_jars": [
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-linux-arm64.jar",
+      "class_entries": 1,
+      "sha256": "b3e5f63cbf435a7306d10d3d59a9f68482dfb3b5c0b44e7c961c034286bc5652"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-linux.jar",
+      "class_entries": 1,
+      "sha256": "9e24ae4154ffffba9836218f17931889c81458bc121714773af590f36d2472c3"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-macos-arm64.jar",
+      "class_entries": 1,
+      "sha256": "fe0b4f55ab4a58bdeb2977f7d557fdc30a8d2177b2e755f5f9aec478ff0f8c55"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-macos.jar",
+      "class_entries": 1,
+      "sha256": "a426042decd326df1e6a08d078609f13f1bc25de2199cba21821413a9793f231"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-windows-arm64.jar",
+      "class_entries": 1,
+      "sha256": "5ae47e351c440ed1b89fa0698f8fe7cc017dd55daf70c96673b80676469705ce"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-windows.jar",
+      "class_entries": 1,
+      "sha256": "c872328a9eabbff9a47947638c84c22f0a826bd6e5add4d3210a9aa83849b079"
+    },
+    {
+      "jar": "META-INF/jars/lwjgl-nanovg-3.4.1.jar",
+      "class_entries": 37,
+      "sha256": "d8b83f2790ea3d1e199d7817e53be4e622f23bd3f0cab765b2ba1e2028e9c07b"
+    }
+  ],
+  "resources": [
+    {
+      "path": "META-INF/MANIFEST.MF",
+      "size": 348,
+      "sha256": "5d39461e3d02f03dc13d03cb73a990525241941cfac2b91b86bc58482a967a8b"
+    },
+    {
+      "path": "clarity.mixins.json",
+      "size": 1809,
+      "sha256": "dba0bacd13e542e234eb85841435545f1d0396d0509cd3ccbece6b02ebdadf05"
+    },
+    {
+      "path": "fabric.mod.json",
+      "size": 859,
+      "sha256": "815c7bbc6210b67b4fea91e849e4007cf8cc3cef212accf122f411fdc1a9ba10"
+    },
+    {
+      "path": "assets/clarity/Clarity.html",
+      "size": 1000441,
+      "sha256": "4054c2fd0646e8c8d6b7abd9d77ca0ab72bae60abbf986d981ebe8b7af2f5e9f"
+    },
+    {
+      "path": "assets/clarity/icon.png",
+      "size": 8227,
+      "sha256": "2788f8bdabba4529f57db2747d5e8d08c3f5359a7f1893ecc97b8182165f4c98"
+    },
+    {
+      "path": "assets/clarity/icon_physics_backup.png",
+      "size": 15631,
+      "sha256": "5c8aa228401c2a239282d417ab36a1278f342345687f3baf9af4d061026542f8"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Berserk.jpg",
+      "size": 294185,
+      "sha256": "bdabaa5f27ccd83287074cf7328097ff64b0986a55f37237df529f827144a523"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Bloom.jpg",
+      "size": 147721,
+      "sha256": "dc4e8a026ff7821456cb67f436ce9713725795fdeb0aea70baa44c5af830f125"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Copper.jpg",
+      "size": 357664,
+      "sha256": "5652b068827fb5eed2e105cd4a002cdda7ae3b4ba2dca9d607aa90112b616f1c"
+    },
+    {
+      "path": "assets/clarity/backgrounds/DarkBlue.jpg",
+      "size": 242532,
+      "sha256": "36c9bda584e2f15e60aade92f2c91643fdd6ee050980629d899ec338222ff774"
+    },
+    {
+      "path": "assets/clarity/backgrounds/DarkMountain.jpg",
+      "size": 350732,
+      "sha256": "f8b70713210cadf41d902fb9a32f869129ff3b3479712c4658de380f51dcdaeb"
+    },
+    {
+      "path": "assets/clarity/backgrounds/DarkPurple.jpg",
+      "size": 102726,
+      "sha256": "65473493715268640e7f2c3ebdc75b12dcca4a7a60da2f82dad14c399e79ed67"
+    },
+    {
+      "path": "assets/clarity/backgrounds/DarkSoul.jpg",
+      "size": 153902,
+      "sha256": "351f946c93032fd859fb8839594ca23c1778d6926d0251e22827e7edf2c018d4"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Endal.jpg",
+      "size": 292264,
+      "sha256": "c1b447e827490176e61f4ae6efaa521d66cc2f4d90cf209adc060588d8ebfee3"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Fuji.jpg",
+      "size": 278395,
+      "sha256": "9a217c1448029e286d9d99bc24bcd488a3fc68aa45a43b323c2d5be8e0545621"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Mocha.jpg",
+      "size": 175427,
+      "sha256": "3098fc2e7bb1d6a7ecbea55ce755e8bf1c0197c754be0eef5badf836f97defa0"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Montanhas.jpg",
+      "size": 163046,
+      "sha256": "c5196e79f76eabf1b56001c644cef21ef1ca4311b3379a789e90a7c151a46add"
+    },
+    {
+      "path": "assets/clarity/backgrounds/PurpleValley.jpg",
+      "size": 214143,
+      "sha256": "0b1cffc173b690c8d19f541bb70b5298804b00038758d6013d592cff2896403d"
+    },
+    {
+      "path": "assets/clarity/backgrounds/ShadesBlue.jpg",
+      "size": 63992,
+      "sha256": "2da55ad106f6044cff70f4a577821d49b20746871f2c8b7cd31d037890917fb1"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Skylight.jpg",
+      "size": 196289,
+      "sha256": "371bd028c684018672afa872629ffaa28025e05772c556d144b7d2f17265e0cb"
+    },
+    {
+      "path": "assets/clarity/backgrounds/SoftCloud.jpg",
+      "size": 53640,
+      "sha256": "e83ecda66992da912e1553a80d4d1d4f8818b45c36085aaa18244362c759c7df"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Space.jpg",
+      "size": 660118,
+      "sha256": "8d68d7b5393dcbbfa20b9469456df353650e6e907e33a160deee5523827403d1"
+    },
+    {
+      "path": "assets/clarity/backgrounds/StarrySkies.jpg",
+      "size": 165513,
+      "sha256": "43a703bcb94a0c7f9f3eddc4d108048bcf61775689d41f3d8141f9c79800c149"
+    },
+    {
+      "path": "assets/clarity/backgrounds/UltimateViolet.jpg",
+      "size": 462277,
+      "sha256": "8ad387e7a3aae872e1b73650f8e23c218e5cb5b9c531d6b322fff6a14a0e054f"
+    },
+    {
+      "path": "assets/clarity/backgrounds/VioletDream.jpg",
+      "size": 97580,
+      "sha256": "390d00afaba97680dc075f195cffa0ca2b20fc30237fe743e44251cfb5fb16c6"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Vortex.jpg",
+      "size": 680016,
+      "sha256": "3cf2907f6e35a8c20373b0e294498aff4e6944c55c1e3c81ad845b1dd9d4b343"
+    },
+    {
+      "path": "assets/clarity/backgrounds/Woodland.jpg",
+      "size": 154363,
+      "sha256": "8ba2571152a8308042459e95a40ff7af9d9c88dec4591c30da25eb481068dc2a"
+    },
+    {
+      "path": "assets/clarity/backgrounds/YellowGreen.jpg",
+      "size": 577494,
+      "sha256": "1c790319e63af2324e778d340cb1309b61266b85c968321db24eb0ec03e0d262"
+    },
+    {
+      "path": "assets/clarity/capes/15th_anniversary_je.png",
+      "size": 1105,
+      "sha256": "cc97912a30f1d6f059f4b874190e7b2851cf4e047d674b99c94292782ff2ab1a"
+    },
+    {
+      "path": "assets/clarity/capes/birthday.png",
+      "size": 1352,
+      "sha256": "cfb28e1d2b8be11d9a1676653be8fe4e0f68e72c6c39152450d364269a24bd86"
+    },
+    {
+      "path": "assets/clarity/capes/bogo.png",
+      "size": 222,
+      "sha256": "d2add13065e757f8b19963467b865920c4425d5c4848fe35db6e0d5e9f997271"
+    },
+    {
+      "path": "assets/clarity/capes/cherry_blossom.png",
+      "size": 694,
+      "sha256": "ba71b339b04d3d7d34d268186de2ee967151c6e802ef16658175390fcaad697a"
+    },
+    {
+      "path": "assets/clarity/capes/cobalt.png",
+      "size": 1009,
+      "sha256": "4c2a333765f3dd54a9c3b295519543eb52f6a1921e93d5c2916a2b64d1413efd"
+    },
+    {
+      "path": "assets/clarity/capes/mapmaker.png",
+      "size": 617,
+      "sha256": "e9e936fda9aa7c000c60a145c54bb1cd807d4b2d650ff32a8602e5a97b0006b8"
+    },
+    {
+      "path": "assets/clarity/capes/migrator.png",
+      "size": 1159,
+      "sha256": "f66f77a137acd9834500eb5e00ab1c81fc51eaafe2eb915f83bcbcf6cd81ea5c"
+    },
+    {
+      "path": "assets/clarity/capes/minecon_2011.png",
+      "size": 920,
+      "sha256": "3f9886e273b1d27b20a379bd8982e0c4d3bd824305e5d295121d1ff20fde0533"
+    },
+    {
+      "path": "assets/clarity/capes/minecon_2012.png",
+      "size": 851,
+      "sha256": "dc8fa0b6f58c5394ebe7c01c90d7510ac695716f380d0cf93dbcfad98ac2faf8"
+    },
+    {
+      "path": "assets/clarity/capes/minecon_2015.png",
+      "size": 421,
+      "sha256": "ff73347f64a8c1bfe9e6a5e6f0a5298573e7a18c0a548bce7a28836199db6e27"
+    },
+    {
+      "path": "assets/clarity/capes/minecon_2016.png",
+      "size": 373,
+      "sha256": "9f00ac566b2ca28666692440e728d44e065c8313218436dcfcc47181b345c1e5"
+    },
+    {
+      "path": "assets/clarity/capes/minecon_2019.png",
+      "size": 364,
+      "sha256": "4d4d507508b8b8bc13879a08be96e9b58ab08b2bb9dd88b284ca88a2d10d1f8a"
+    },
+    {
+      "path": "assets/clarity/capes/moderator.png",
+      "size": 1179,
+      "sha256": "821768eeaf6c9dea4b50ca0dfd15c661e9da7923b6482e2b2bc87809b9feaef8"
+    },
+    {
+      "path": "assets/clarity/capes/mojang.png",
+      "size": 593,
+      "sha256": "83021c763b014ad0de8e123c0ee8ef6f8cb2c84c77f5305a75a060a32e1c6fcc"
+    },
+    {
+      "path": "assets/clarity/capes/mojang_office_be.png",
+      "size": 960,
+      "sha256": "e471ecb6b7166cad311b2c4bc3604c589412d0d14e7eb6a985ca28c751e456cd"
+    },
+    {
+      "path": "assets/clarity/capes/one_vanilla.png",
+      "size": 924,
+      "sha256": "3e99193f875be4123a6552a0b05df0e8f4c7fac37e357877cd40c802b13a030e"
+    },
+    {
+      "path": "assets/clarity/capes/prismarine.png",
+      "size": 1376,
+      "sha256": "cd0c698395694b69ddd83720d293323f16f576a235a8909236babbeabeb93a5b"
+    },
+    {
+      "path": "assets/clarity/capes/progress_pride.png",
+      "size": 1779,
+      "sha256": "f09cb71a902cab5a90e78a703d5fe305239a269e12ce90ac6ef1c8247146bedd"
+    },
+    {
+      "path": "assets/clarity/capes/purple_heart.png",
+      "size": 1253,
+      "sha256": "655c058b9c5bcf3e1aee4ec1d4469543f1f271a0bfc9b46322bd6fbdc75c9ed5"
+    },
+    {
+      "path": "assets/clarity/capes/the_pan.png",
+      "size": 481,
+      "sha256": "e00a3cc1fc23c3ea5cc80f519dae03e52eadd03b57abb714425e81775541670c"
+    },
+    {
+      "path": "assets/clarity/capes/translator.png",
+      "size": 1696,
+      "sha256": "af49f1d5144afa942c2c1e37e81a8b91ce8c7797595c497eb38e36fdb9fdd071"
+    },
+    {
+      "path": "assets/clarity/capes/turtle.png",
+      "size": 422,
+      "sha256": "6723afcb1b4236316d63b97e026dd5b05ba581d88ae46cda8cc8fbc3639a7bd7"
+    },
+    {
+      "path": "assets/clarity/capes/twisted.png",
+      "size": 1026,
+      "sha256": "33ff68eaba5889b2d7023d86ebee3eb3360a43fc70ef749815d06cee9d638096"
+    },
+    {
+      "path": "assets/clarity/capes/vanilla_experience.png",
+      "size": 1181,
+      "sha256": "f1185820b7315165999b7f8d3676614744c35978ad752dd0356e6db117c17707"
+    },
+    {
+      "path": "assets/clarity/capes/zombie_horse.png",
+      "size": 1698,
+      "sha256": "8d0043015ae52ff84b08c7386dfcd7c35ca1118d35161f3c172d025c8e2884f3"
+    },
+    {
+      "path": "assets/clarity/fonts/Inter-Medium.ttf",
+      "size": 341984,
+      "sha256": "7eb70bcb654a9cee3fcb1414b216c79c3d2ad02b84470b5340f9018879502a8b"
+    },
+    {
+      "path": "assets/clarity/fonts/Inter-Regular.ttf",
+      "size": 341396,
+      "sha256": "8de977307b039f4a2c4b1400ced1942bfc6044d6b73c8934b94451eb11368856"
+    },
+    {
+      "path": "assets/clarity/fonts/Inter-SemiBold.ttf",
+      "size": 342660,
+      "sha256": "239a4087f38514cf59482e72573cd9a61dc680e399a71cd72d373a6c5461e6a7"
+    },
+    {
+      "path": "assets/clarity/shaders/core/fogless_lines.fsh",
+      "size": 167,
+      "sha256": "0a32bbfad7cc9107842b197c8427a23ba08f691c7b3e7d81391522c4a0b10312"
+    },
+    {
+      "path": "assets/clarity/shaders/core/fogless_lines.vsh",
+      "size": 1226,
+      "sha256": "06227da649c88afca4ac1fac1940d12d6cd2cc9ab158becd121015d8cf87d0c1"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/chroma.fsh",
+      "size": 2060,
+      "sha256": "8d186e63c8a71ca6fe03a62bae5e0646447c1e50680c4b5d784f880ff4e11da4"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/chroma.vsh",
+      "size": 164,
+      "sha256": "a7a7caf8a180c8042c1e25e60bc2dc80f22e04cb3c497a766475c62c3e777fa1"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/edgeglow.fsh",
+      "size": 2471,
+      "sha256": "ba8fb72590185c647504603202e12cea07cdc30fa623691dba96f7461f73f419"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/edgeglow.vsh",
+      "size": 164,
+      "sha256": "a7a7caf8a180c8042c1e25e60bc2dc80f22e04cb3c497a766475c62c3e777fa1"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/esp_outline.fsh",
+      "size": 1910,
+      "sha256": "34303d26b5ef49db6c2d636ec246ca7c41802aed66e653d163ad2260ada8d74e"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/esp_outline.vsh",
+      "size": 164,
+      "sha256": "a7a7caf8a180c8042c1e25e60bc2dc80f22e04cb3c497a766475c62c3e777fa1"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/invert.fsh",
+      "size": 3745,
+      "sha256": "1acefe92b3dee994d09f356442bb1a9b9d7b66caa7a6f5cd8535fe1815efcba6"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/invert.vsh",
+      "size": 164,
+      "sha256": "a7a7caf8a180c8042c1e25e60bc2dc80f22e04cb3c497a766475c62c3e777fa1"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_composite.fsh",
+      "size": 1402,
+      "sha256": "e7d872ec2f1e779c6bb58807574c9ab40b8e1fb58725e0df68e56ae7389756c4"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_composite.vsh",
+      "size": 163,
+      "sha256": "911b88e73fd6bfbcd82d40c656ed10a94f2b075c2ebb164dd23d438b46251f59"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_init.fsh",
+      "size": 377,
+      "sha256": "1cb60994b7eafc366e1c9df7b63616a48255c58fb20453a678c3ae3fee2091cf"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_init.vsh",
+      "size": 163,
+      "sha256": "911b88e73fd6bfbcd82d40c656ed10a94f2b075c2ebb164dd23d438b46251f59"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_step.fsh",
+      "size": 1268,
+      "sha256": "36dc2cb3133da1ab407c573bf9e56ac74190196ee204594fa7b6bbd411d1c6af"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/jfa_step.vsh",
+      "size": 163,
+      "sha256": "911b88e73fd6bfbcd82d40c656ed10a94f2b075c2ebb164dd23d438b46251f59"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/outline.fsh",
+      "size": 2113,
+      "sha256": "7349c9be9dac048f1bde9bcdcff4b288dc9969d9f1a72ae7d33c0757ac1bff17"
+    },
+    {
+      "path": "assets/clarity/shaders/hand/outline.vsh",
+      "size": 164,
+      "sha256": "a7a7caf8a180c8042c1e25e60bc2dc80f22e04cb3c497a766475c62c3e777fa1"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-linux-arm64.jar",
+      "size": 166120,
+      "sha256": "b3e5f63cbf435a7306d10d3d59a9f68482dfb3b5c0b44e7c961c034286bc5652"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-linux.jar",
+      "size": 183160,
+      "sha256": "9e24ae4154ffffba9836218f17931889c81458bc121714773af590f36d2472c3"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-macos-arm64.jar",
+      "size": 141877,
+      "sha256": "fe0b4f55ab4a58bdeb2977f7d557fdc30a8d2177b2e755f5f9aec478ff0f8c55"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-macos.jar",
+      "size": 165346,
+      "sha256": "a426042decd326df1e6a08d078609f13f1bc25de2199cba21821413a9793f231"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-windows-arm64.jar",
+      "size": 205297,
+      "sha256": "5ae47e351c440ed1b89fa0698f8fe7cc017dd55daf70c96673b80676469705ce"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1-natives-windows.jar",
+      "size": 244873,
+      "sha256": "c872328a9eabbff9a47947638c84c22f0a826bd6e5add4d3210a9aa83849b079"
+    },
+    {
+      "path": "META-INF/jars/lwjgl-nanovg-3.4.1.jar",
+      "size": 84068,
+      "sha256": "d8b83f2790ea3d1e199d7817e53be4e622f23bd3f0cab765b2ba1e2028e9c07b"
+    }
+  ]
+}
